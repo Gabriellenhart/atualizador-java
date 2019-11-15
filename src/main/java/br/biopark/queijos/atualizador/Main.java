@@ -86,11 +86,11 @@ public class Main {
 
     private static boolean checkNewVersion() {
 
-        var vAtual = Integer.parseInt(versaoAtual.replace(".", ""));
+        int vAtual = Integer.parseInt(versaoAtual.replace(".", ""));
 
         for (String v : versoes) {
 
-            var vRem = Integer.parseInt(v.replace(".", ""));
+            int vRem = Integer.parseInt(v.replace(".", ""));
 
             if (vRem > vAtual) {
                 return true;

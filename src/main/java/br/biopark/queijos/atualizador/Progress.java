@@ -192,13 +192,13 @@ public class Progress extends javax.swing.JFrame {
         
         UnzipFiles unzip = new UnzipFiles();
         
-        var vAtual = Integer.parseInt(versaoAtual.replace(".", ""));
+        int vAtual = Integer.parseInt(versaoAtual.replace(".", ""));
 
         boolean existeNova = false;
 
         for (String v : versoes) {
 
-            var vRem = Integer.parseInt(v.replace(".", ""));
+            int vRem = Integer.parseInt(v.replace(".", ""));
 
             if (vRem > vAtual) {
                 existeNova = true;
@@ -238,7 +238,7 @@ public class Progress extends javax.swing.JFrame {
         }
         
         
-        System.exit(0);
+        //System.exit(0); funcao que fecha o programa
 
     }
 
